@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "font";
+  src: url("font.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-family: "font", sans-serif;
+  background-color: #eee8d5;
+  color: #657b83;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+
+h1 {
+  color: #586e75;
+}
+
