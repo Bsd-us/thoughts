@@ -1,3 +1,13 @@
+:root {
+  /* Solarized colors: https://github.com/altercation/solarized */
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+}
+
 @font-face {
   font-family: "font";
   src: url("font.otf") format("opentype");
@@ -14,22 +24,51 @@ h1, h2, p {
   margin: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   font-family: "font", sans-serif;
-  background-color: #eee8d5;
-  color: #657b83;
+  background-color: var(--base2);
+  color: var(--base00);
+}
+
+h1 {
+  color: var(--base01);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  list-style-type: none;
+}
+
+summary {
+  cursor: pointer;
+}
+
+h2 {
+  display: inline;
+}
+
+time {
+  font-weight: normal;
+  font-size: .7em;
+  color: var(--base1);
 }
 
 article {
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
+  padding: .5rem 1rem 0 0;
 }
 
-h1 {
-  color: #586e75;
+span {
+  color: var(--base0);
 }
-
