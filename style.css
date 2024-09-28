@@ -20,21 +20,23 @@
   font-weight: bold;
 }
 
-h1, h2, p {
-  margin: 0;
-}
-
-p {
-  text-align: justify;
+html {
+  display: flex;
+  justify-content: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  width: 1024px;
   font-family: "font", sans-serif;
   background-color: var(--base2);
   color: var(--base00);
+}
+
+h1, h2, p {
+  margin: 0;
 }
 
 h1 {
@@ -71,4 +73,8 @@ article {
 
 span {
   color: var(--base0);
+}
+
+p {
+  text-align: justify;
 }
