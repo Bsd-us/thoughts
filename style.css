@@ -78,3 +78,18 @@ span {
 p {
   text-align: justify;
 }
+
+mark {
+  float: left;
+  line-height: 1;
+  height: 2rem; /* Covering 2 lines */
+  font-size: 2.7rem; /* Compensating for bottom line height padding */
+  padding-right: .5rem;
+  background: none;
+  color: var(--base0);
+  text-shadow: var(--base00) 2px 2px 3px;
+}
+
+.emoticon {
+  letter-spacing: -4px;
+}
